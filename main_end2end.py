@@ -64,7 +64,7 @@ parser.add_argument('--emb_coef', default=3.0, type=float)
 parser.add_argument('--lambda_laplacian_smooth_loss', default=1.0, type=float)
 parser.add_argument('--use_11spk_only', default=False, action='store_true')
 
-opt_parser = parser.parse_args()
+opt_parser = parser.parse_args(['--jpg', 'captain.jpg'])
 
 ''' STEP 1: preprocess input single image '''
 img =cv2.imread('examples/' + opt_parser.jpg)

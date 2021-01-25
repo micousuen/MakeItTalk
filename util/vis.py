@@ -37,7 +37,7 @@ class Vis():
         fls = fls.astype(int)
 
         writer = cv2.VideoWriter(os.path.join('examples', 'tmp.mp4'),
-                                 cv2.VideoWriter_fourcc('M', 'J', 'P', 'G'), fps, (400, 400))
+                                 cv2.VideoWriter_fourcc('m', 'p', '4', 'v'), fps, (400, 400))
 
         frames = np.min((fls.shape[0], frames))
         for i in range(frames): #fls.shape[0]):
